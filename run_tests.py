@@ -518,7 +518,13 @@ programs = {
        {
            "url":"https://github.com/nlohmann/json",
            "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
-       }
+       },
+    "MoonBit":
+        {
+            "url": "",
+            "setup": ["deno", "run", "-A", os.path.join(PARSERS_DIR, "test_moonbit_JSON/build.ts")],
+            "commands": ["deno", "run", "-A", os.path.join(PARSERS_DIR, "test_moonbit_JSON/wasi.ts")]
+        }
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
@@ -598,7 +604,6 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
 
                 if use_stdin:
                     my_stdin.close()
-
                 result = None
                 if status == 0:
                     result = "PASS"

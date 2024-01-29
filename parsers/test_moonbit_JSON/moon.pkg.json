@@ -1,0 +1,11 @@
+{
+  "import": [
+    { "path": "peter-jerry-ye/parser-combinator", "alias": "parsec" },
+    "peter-jerry-ye/wasi",
+    "peter-jerry-ye/json",
+    "fantix/muts/hashmap",
+    "fantix/muts/arraylist",
+    "fantix/muts/iter"
+  ],
+  "is_main": true
+}
