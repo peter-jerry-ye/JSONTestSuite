@@ -524,6 +524,12 @@ programs = {
             "url": "",
             "setup": ["moon", "build", "--target", "js", "--source-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON"), "--target-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target")],
             "commands": ["node", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target", "js", "release", "build", "test-json.js")]
+        },
+    "MoonBit Core":
+        {
+            "url": "",
+            "setup": ["moon", "build", "--target", "js", "--source-dir", os.path.join(PARSERS_DIR, "test_moonbit_core"), "--target-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target")],
+            "commands": ["node", os.path.join(PARSERS_DIR, "test_moonbit_core", "target", "js", "release", "build", "test-json.js")]
         }
 }
 
