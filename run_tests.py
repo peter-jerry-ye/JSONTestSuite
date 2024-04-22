@@ -530,7 +530,14 @@ programs = {
             "url": "",
             "setup": ["moon", "build", "--target", "js", "--source-dir", os.path.join(PARSERS_DIR, "test_moonbit_core"), "--target-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target")],
             "commands": ["node", os.path.join(PARSERS_DIR, "test_moonbit_core", "target", "js", "release", "build", "test-json.js")]
+        },
+    "MoonBit Mizchi":
+        {
+            "url": "",
+            "setup": ["moon", "build", "--target", "js", "--source-dir", os.path.join(PARSERS_DIR, "test_moonbit_mizchi"), "--target-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target")],
+            "commands": ["node", os.path.join(PARSERS_DIR, "test_moonbit_mizchi", "target", "js", "release", "build", "test-json.js")]
         }
+
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
