@@ -522,8 +522,8 @@ programs = {
     "MoonBit":
         {
             "url": "",
-            "setup": ["deno", "run", "-A", os.path.join(PARSERS_DIR, "test_moonbit_JSON/build.ts")],
-            "commands": ["deno", "run", "-A", os.path.join(PARSERS_DIR, "test_moonbit_JSON/wasi.ts")]
+            "setup": ["moon", "build", "--target", "js", "--source-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON"), "--target-dir", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target")],
+            "commands": ["node", os.path.join(PARSERS_DIR, "test_moonbit_JSON", "target", "js", "release", "build", "test-json.js")]
         }
 }
 
