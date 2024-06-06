@@ -2,6 +2,6 @@
   "name": "peter-jerry-ye/test-json",
   "version": "0.1.0",
   "deps": {
-    "peter-jerry-ye/json": "0.2.1"
+    "peter-jerry-ye/json": "0.3.0"
   }
 }

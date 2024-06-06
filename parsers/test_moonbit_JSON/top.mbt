@@ -20,7 +20,7 @@ extern "js" fn exit(i : Int) -> Unit =
   #| (i) => require("node:process").exit(i)
 
 extern "js" fn argv() -> Array[String] =
-  #| () => require("node:process").argv
+  #| () => ({ buf : require("node:process").argv, len : 3 })
 
 extern "js" fn read_file_sync(file : String) -> String =
   #| (file) => require("node:fs").readFileSync(file, "utf-8")
