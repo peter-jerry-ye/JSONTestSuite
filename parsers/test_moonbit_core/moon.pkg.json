@@ -1,6 +1,3 @@
 {
-  "is_main": true,
-  "import": [
-    "moonbitlang/x/json5"
-  ]
+  "is_main": true
 }

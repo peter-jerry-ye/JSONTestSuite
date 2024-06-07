@@ -1,7 +1,4 @@
 {
   "name": "peter-jerry-ye/test-json",
-  "version": "0.1.0",
-  "deps": {
-    "moonbitlang/x": "0.3.1"
-  }
+  "version": "0.1.0"
 }

@@ -1,5 +1,5 @@
 pub fn parse(input : String) -> Int {
-  match @json5.parse(input) {
+  match @json.parse(input) {
     Ok(_) => 0
     Err(_) => 1
   }
